@@ -6,7 +6,7 @@ import { FcAddImage, FcAddressBook, FcAlarmClock, FcOldTimeCamera, FcOrgUnit, Fc
 export default function Home() {
 
   return (
-    <div className="flex min-h-screen  items-center justify-center  font-sans dark:bg-black bg-gray-200/30 backdrop-blur-2xl">
+    <div className="flex min-h-screen  items-center justify-center pb-20  font-sans dark:bg-black bg-gray-200/30 backdrop-blur-2xl">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center   pt-28 px-8  space-y-8  text-white dark:bg-black sm:items-start">
         <div className="hero w-full p-4 h-[30vh] rounded-2xl bg-white/40 backdrop-blur-3xl shadow-3xl outline-white/80 outline-[2px]">h</div>
         <section className="w-full">
@@ -51,7 +51,7 @@ export default function Home() {
               </p>
               <p className="text-xs text-gray-400">5 membeli</p>
               <div className="actions py-2 flex w-full flex-row gap-2">
-                <span className="info text-orange-600 text-xs  self-end">Info </span> <FaCrown className="text-orange-600 self-end" />
+                <span className="info text-orange-600 text-xs  self-end">1k </span> <FaCrown className="text-orange-600 self-end" />
                 <div className="ml-auto rounded-full p-2 bg-orange-600">
                   <BsLightningChargeFill className="text-white" />
                 </div>
@@ -67,7 +67,7 @@ export default function Home() {
               </p>
               <p className="text-xs text-gray-400">5 membeli</p>
               <div className="actions py-2 flex w-full flex-row gap-2">
-                <span className="info text-orange-600 text-xs  self-end">Info </span> <FaCrown className="text-orange-600 self-end" />
+                <span className="info text-orange-600 text-xs  self-end">1k </span> <FaCrown className="text-orange-600 self-end" />
                 <div className="ml-auto rounded-full p-2 bg-orange-600">
                   <BsLightningChargeFill className="text-white" />
                 </div>
