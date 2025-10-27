@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaCrown } from "react-icons/fa";
 import { FcAddImage, FcAddressBook, FcAlarmClock, FcOldTimeCamera, FcOrgUnit, FcSportsMode } from "react-icons/fc";
@@ -8,10 +9,19 @@ export default function Home() {
   return (
     <div className="flex min-h-screen  items-center justify-center pb-20  font-sans dark:bg-black bg-gray-200/30 backdrop-blur-2xl">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center   pt-28 px-8  space-y-8  text-white dark:bg-black sm:items-start">
-        <div className="hero w-full p-4 h-[30vh] rounded-2xl bg-white/40 backdrop-blur-3xl shadow-3xl outline-white/80 outline-[2px]">h</div>
+        <div className="hero w-full p-4 h-[30vh] rounded-2xl bg-white/40 backdrop-blur-3xl shadow-3xl outline-white/60 outline-[2px]">
+          <Image
+            src="/hero.png"
+            alt="Hero Image"
+            layout="fill"
+            objectFit="cover"
+            quality={70}
+            className="rounded-2xl scale-90"
+          />
+        </div>
         <section className="w-full">
-          <div className="header items w-full  flex  justify-between">
-            <span className="text-white  text-md text-start w-full">Items</span>
+          <div className="header items w-full  flex  justify-between mb-2">
+            <span className="text-white  text-md text-start w-full">Popular</span>
             <span className="text-white text-md text-end w-full">All</span>
           </div>
           <div className="card-wrapper gap-2 h-20 w-full  flex">
@@ -36,7 +46,7 @@ export default function Home() {
         </section>
         <section className="more w-full">
 
-          <div className="header items w-full  flex  justify-between">
+          <div className="header items w-full  flex  justify-between mb-2">
             <span className="text-white  text-md text-start w-full">More</span>
             <span className="text-white text-md text-end w-full">Show All</span>
           </div>
