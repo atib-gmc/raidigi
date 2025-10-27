@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Hamburger, HamburgerIcon, LucideHamburger } from "lucide-react";
+import NavBar from "./components/NavBar";
+import BottomNav from "./components/BottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +28,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-gray-200`}
+
+
       >
+        <NavBar />
+        <div className="absolute w-[400px] h-[400px] rounded-full -translate-x-2/4 left-2/5  bg-purple-600 -top-10 ">h</div>
+        <div className="absolute w-[400px] h-[400px] rounded-full -translate-x-[40%] left-2/5  bg-blue-700 top-32 ">h</div>
+
         {children}
+        <BottomNav />
       </body>
     </html>
   );
