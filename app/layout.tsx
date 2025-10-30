@@ -33,10 +33,14 @@ export default function RootLayout({
 
       >
         <NavBar />
+
         <div className="absolute w-[400px] h-[400px] rounded-full -translate-x-2/4 left-2/5  bg-purple-600 -top-10 ">h</div>
         <div className="absolute w-[400px] h-[400px] rounded-full -translate-x-[40%] left-2/5  bg-blue-700 top-32 ">h</div>
 
-        {children}
+        <div className="flex min-h-screen  items-center justify-center pb-20  min-h-[100vh] font-sans dark:bg-black bg-gray-200/30 backdrop-blur-2xl">
+          {children}
+
+        </div>
         <BottomNav />
       </body>
     </html>

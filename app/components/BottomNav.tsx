@@ -2,8 +2,8 @@ import { Contact, HomeIcon, SearchIcon, Settings } from 'lucide-react'
 
 export default function BottomNav() {
     return (
-        <div className="bg-white/40 backdrop-blur-xl pt-[2px] flex  fixed -bottom-4 w-full h-20 rounded-t-4xl shadow-sm  pb-20 justify-center gap-4">
-            <div className="flex-1 text-center max-w-11 h-11 outline-6 outline-white text-white -translate-y-1.5 rounded-full p-2 grid place-items-center bg-red-400">
+        <div className="bg-white/40 backdrop-blur-xl pt-[2px] flex  fixed -bottom-4 w-full h-20 rounded-t-4xl shadow-xl  pb-20 justify-center gap-4">
+            <div className="flex-1 text-center max-w-11 h-11 outline-6 outline-white/40 text-white  -translate-y-1.5 rounded-full p-2 grid place-items-center bg-red-400">
                 <HomeIcon />
             </div>
             <div className="flex-1 text-center max-w-11 h-11  rounded-full p-2 grid place-items-center text-gray-500">
